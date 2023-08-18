@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": -82.67, "left": -124, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": -239.61,
+      "left": 9.84,
+      "attrs": { "color": "green", "label": "Gas Valve" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -235.9,
+      "left": -64.19,
+      "attrs": { "color": "red", "label": "Igniter" }
+    },
+    {
+      "type": "wokwi-slide-potentiometer",
+      "id": "pot3",
+      "top": -120.34,
+      "left": 212.99,
+      "attrs": { "travelLength": "30" }
+    },
+    { "type": "wokwi-slide-switch", "id": "sw1", "top": -198.23, "left": 110.51, "attrs": {} },
+    {
+      "type": "wokwi-slide-potentiometer",
+      "id": "pot1",
+      "top": -19.27,
+      "left": 220.42,
+      "attrs": { "travelLength": "30" }
+    }
+  ],
+  "connections": [
+    [ "pot3:GND", "uno:GND.1", "black", [ "v-68.66", "h-5.34" ] ],
+    [ "pot3:VCC", "uno:5V", "red", [ "h-15.51", "v290.28", "h-165.9" ] ],
+    [ "pot3:SIG", "uno:A1", "green", [ "h-46.26", "v196.03", "h-78.72" ] ],
+    [ "pot1:GND", "uno:GND.1", "black", [ "v2.03", "h141.04", "v-172.22", "h-141.74" ] ],
+    [ "pot1:SIG", "uno:A0", "green", [ "h-3.49", "v114.62", "h-134.12" ] ],
+    [ "pot1:VCC", "uno:5V", "red", [ "h-9.59", "v233.68", "h-176.79" ] ],
+    [ "sw1:2", "uno:GND.1", "black", [ "v48.05", "h-135.21" ] ],
+    [ "sw1:3", "uno:5", "green", [ "v57.53", "h-53.49", "v4.74" ] ],
+    [ "led2:A", "uno:12", "green", [ "v32.86", "h-28.13" ] ],
+    [ "led2:C", "uno:GND.1", "black", [ "v9.16", "h-38.27" ] ],
+    [ "led1:C", "uno:GND.1", "black", [ "v39.82", "h34.57", "v-1.18" ] ],
+    [ "led1:A", "uno:8", "green", [ "v16.12", "h96.83" ] ]
+  ],
+  "dependencies": {}
+}

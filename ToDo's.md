@@ -1,0 +1,1 @@
+1. Write application code in C only (.c/.h)
