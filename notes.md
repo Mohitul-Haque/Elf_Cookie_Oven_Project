@@ -1,10 +1,7 @@
 # Intro
-This simple assignment will help give you a feel for what it is like to be a JCA
+This simple assignment will help give you a feel for what it is like to be a
 embedded developer. We work on larger projects, have tools to help auto generate 
-code, and we don't actually use Arduino.
-
-## We don't steal your code
-This is a fun toy assignment. Your submitted code will not be used by JCA.
+code.
 
 # Suggested time limit
 Aim to spend 4-6 hours. If you run out of time and aren't satisfied with your code,
@@ -57,7 +54,6 @@ should be done differently given enough time.
   - You can use the Arduino `setup()` function to run some tests and print the results.
   - We typically use gtest with Visual Studio or gcc/make for our unit testing but
   this can take a while to setup. Don't feel like you need to.
-- Write your application code in C only (.c/.h)
   - Unit testing code can be c++
 - Improve api.h/cpp. If you do, please leave comments explaining your improvements 
 (what was wrong before, why it is better now).
