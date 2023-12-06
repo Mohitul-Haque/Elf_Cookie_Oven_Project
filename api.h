@@ -1,7 +1,5 @@
 // NOTE!!!!!!
-// Don't assume the below API follows good coding or JCA conventions.
 // Follow your own best judgement for your own code.
-// Feel free to rework this API if you like (not required).
 
 #pragma once
 
